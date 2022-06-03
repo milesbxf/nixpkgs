@@ -35,6 +35,11 @@ let
   # clang-built) kernels.
   stdenv' = if kernel == null then stdenv else kernel.stdenv;
 
+  # See https://github.com/openzfs/zfs/pull/13195
+  fixHdrUnusedVariableBuildErrorPatch = fetchpatch {
+    url = "https://github.com/openzfs/zfs/commit/045aeabce6e5df9c88412c479ddd073087b2d83d.patch";
+    hash = "sha256-30ah6Dttm9tBp6jXjLtDWv/aM9ACRBPDbEmpDqoSqbo=";
+  };
   common = { version
     , sha256
     , extraPatches ? []
@@ -223,6 +228,8 @@ in {
     version = "2.1.4";
 
     sha256 = "sha256-pHz1N2j+d9p1xleEBwwrmK9mN5gEyM69Suy0dsrkZT4=";
+    
+    extraPatches = [ fixHdrUnusedVariableBuildErrorPatch ];
   };
 
   zfsUnstable = common {
@@ -240,5 +247,6 @@ in {
     sha256 = "sha256-pHz1N2j+d9p1xleEBwwrmK9mN5gEyM69Suy0dsrkZT4=";
 
     isUnstable = true;
+    extraPatches = [ fixHdrUnusedVariableBuildErrorPatch ];
   };
 }
