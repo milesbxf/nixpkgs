@@ -234,7 +234,7 @@ in {
     # IMPORTANT: Always use a tagged release candidate or commits from the
     # zfs-<version>-staging branch, because this is tested by the OpenZFS
     # maintainers.
-    version = "2.1.4";
+    version = "fc18fa92c8cf3bd8febed784a15804e86aa08cb5";
     # rev = "0000000000000000000000000000000000000000";
 
     sha256 = "sha256-pHz1N2j+d9p1xleEBwwrmK9mN5gEyM69Suy0dsrkZT4=";
