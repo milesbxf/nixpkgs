@@ -235,7 +235,7 @@ in {
     # zfs-<version>-staging branch, because this is tested by the OpenZFS
     # maintainers.
     version = "2.1.5-staging";
-    rev = "03593820a66b65d559e1ae6e8a90aac1cc459804";
+    rev = "fc18fa92c8cf3bd8febed784a15804e86aa08cb5";
 
     sha256 = "sha256-pHz1N2j+d9p1xleEBwwrmK9mN5gEyM69Suy0dsrkZT4=";
 
