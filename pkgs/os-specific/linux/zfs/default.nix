@@ -1,4 +1,4 @@
-{ pkgs, lib, stdenv, fetchFromGitHub, fetchPatch
+{ pkgs, lib, stdenv, fetchFromGitHub, fetchpatch
 , autoreconfHook269, util-linux, nukeReferences, coreutils
 , perl, nixosTests
 , configFile ? "all"
