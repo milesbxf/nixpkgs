@@ -237,7 +237,7 @@ in {
     version = "2.1.5-staging";
     rev = "fc18fa92c8cf3bd8febed784a15804e86aa08cb5";
 
-    sha256 = "000";
+    sha256 = "0b7k04lpmfj2qqgc9wya9zyv8m53317gv49bc2ls3w94dsyymz99";
 
     isUnstable = true;
   };
